@@ -1,0 +1,298 @@
+[
+  {
+    "name": "Jollof Rice",
+    "category": "rice",
+    "tags": ["ghanaian", "party", "spicy"],
+    "ingredients": ["rice", "tomatoes", "tomato paste", "onion", "bell pepper", "garlic", "ginger", "vegetable oil", "stock cube", "chili pepper", "salt"],
+    "instructions": ["Blend tomatoes, onion, pepper, garlic, and ginger.", "Fry tomato paste in oil and add blended mix.", "Cook sauce until thick and add stock cube and salt.", "Add washed rice and water, cover, and simmer until tender."],
+    "cooking_time": "50 minutes"
+  },
+  {
+    "name": "Waakye",
+    "category": "rice",
+    "tags": ["ghanaian", "street food"],
+    "ingredients": ["rice", "black eyed beans", "sorghum leaves", "onion", "salt", "water"],
+    "instructions": ["Soak and boil black eyed beans until partly soft.", "Add sorghum leaves and cook for color.", "Add washed rice, onion, salt, and water.", "Cook on low heat until both rice and beans are tender."],
+    "cooking_time": "70 minutes"
+  },
+  {
+    "name": "Kelewele",
+    "category": "snack",
+    "tags": ["ghanaian", "quick", "vegetarian"],
+    "ingredients": ["ripe plantain", "ginger", "garlic", "cayenne pepper", "salt", "nutmeg", "vegetable oil"],
+    "instructions": ["Dice plantain and season with blended spices.", "Heat oil in a pan.", "Fry seasoned plantain until golden brown.", "Drain and serve hot."],
+    "cooking_time": "20 minutes"
+  },
+  {
+    "name": "Banku with Okro Stew",
+    "category": "swallow",
+    "tags": ["ghanaian", "seafood"],
+    "ingredients": ["corn dough", "cassava dough", "okra", "tomatoes", "onion", "palm oil", "smoked fish", "pepper", "salt"],
+    "instructions": ["Cook corn and cassava dough in water while stirring until smooth.", "Boil chopped okra briefly and set aside.", "Cook tomato, onion, oil, fish, and pepper into a stew.", "Add okra to stew and serve with molded banku."],
+    "cooking_time": "55 minutes"
+  },
+  {
+    "name": "Fufu with Light Soup",
+    "category": "swallow",
+    "tags": ["ghanaian", "comfort"],
+    "ingredients": ["cassava", "plantain", "goat meat", "tomatoes", "onion", "pepper", "ginger", "garlic", "salt"],
+    "instructions": ["Boil cassava and plantain until soft.", "Pound together until stretchy and smooth.", "Boil meat with onion, ginger, garlic, and salt.", "Add blended tomato and pepper and simmer into light soup."],
+    "cooking_time": "90 minutes"
+  },
+  {
+    "name": "Red Red",
+    "category": "beans",
+    "tags": ["ghanaian", "vegan"],
+    "ingredients": ["black eyed beans", "palm oil", "onion", "tomatoes", "garlic", "ginger", "chili pepper", "salt", "ripe plantain"],
+    "instructions": ["Boil beans until soft.", "Cook onion, tomato, garlic, and ginger in palm oil.", "Add cooked beans and simmer until thick.", "Serve with fried ripe plantain."],
+    "cooking_time": "45 minutes"
+  },
+  {
+    "name": "Palava Sauce",
+    "category": "stew",
+    "tags": ["ghanaian", "leafy"],
+    "ingredients": ["cocoyam leaves", "eggs", "palm oil", "onion", "tomatoes", "smoked fish", "ground melon seeds", "pepper", "salt"],
+    "instructions": ["Blend or finely chop cocoyam leaves.", "Saute onion and tomato in palm oil.", "Add fish, melon seeds, pepper, and leaves.", "Simmer and stir in whisked eggs until set."],
+    "cooking_time": "35 minutes"
+  },
+  {
+    "name": "Groundnut Soup",
+    "category": "soup",
+    "tags": ["ghanaian", "rich"],
+    "ingredients": ["peanut butter", "chicken", "tomatoes", "onion", "pepper", "ginger", "garlic", "stock cube", "salt"],
+    "instructions": ["Boil chicken with onion, ginger, and garlic.", "Blend tomatoes and pepper and add to pot.", "Dilute peanut butter with warm stock and add.", "Simmer until soup is smooth and aromatic."],
+    "cooking_time": "60 minutes"
+  },
+  {
+    "name": "Kontomire Stew",
+    "category": "stew",
+    "tags": ["ghanaian", "leafy"],
+    "ingredients": ["cocoyam leaves", "yam", "palm oil", "onion", "tomatoes", "pepper", "smoked turkey", "salt"],
+    "instructions": ["Boil yam cubes until tender.", "Steam cocoyam leaves and chop.", "Cook tomato, onion, pepper, and oil into sauce.", "Add leaves and smoked turkey, then simmer."],
+    "cooking_time": "40 minutes"
+  },
+  {
+    "name": "Ampesi with Garden Egg Stew",
+    "category": "yam",
+    "tags": ["ghanaian", "traditional"],
+    "ingredients": ["yam", "garden eggs", "tomatoes", "onion", "pepper", "palm oil", "smoked fish", "salt"],
+    "instructions": ["Boil peeled yam until soft.", "Boil garden eggs and blend with tomato and pepper.", "Cook onion in palm oil and add blended mix.", "Add fish and simmer; serve with yam."],
+    "cooking_time": "45 minutes"
+  },
+  {
+    "name": "Gari Foto",
+    "category": "quick",
+    "tags": ["ghanaian", "quick", "vegetarian"],
+    "ingredients": ["gari", "eggs", "onion", "tomatoes", "pepper", "sardines", "vegetable oil", "salt"],
+    "instructions": ["Saute onion, tomato, and pepper in oil.", "Add sardines and whisked eggs.", "Stir in gari gradually with a splash of water.", "Cook briefly and serve warm."],
+    "cooking_time": "15 minutes"
+  },
+  {
+    "name": "Yam Porridge",
+    "category": "yam",
+    "tags": ["ghanaian", "one-pot"],
+    "ingredients": ["yam", "palm oil", "tomatoes", "onion", "pepper", "smoked fish", "stock cube", "salt"],
+    "instructions": ["Cook yam cubes in seasoned water.", "Add tomato, onion, and pepper blend.", "Stir in palm oil and smoked fish.", "Simmer until yam softens and broth thickens."],
+    "cooking_time": "35 minutes"
+  },
+  {
+    "name": "Tom Brown Porridge",
+    "category": "breakfast",
+    "tags": ["ghanaian", "healthy"],
+    "ingredients": ["tom brown flour", "water", "milk", "sugar", "groundnut powder", "salt"],
+    "instructions": ["Mix tom brown flour with cold water.", "Pour into boiling water while stirring.", "Cook until smooth and thick.", "Add milk, sugar, and groundnut powder."],
+    "cooking_time": "12 minutes"
+  },
+  {
+    "name": "Kenkey with Pepper and Fish",
+    "category": "swallow",
+    "tags": ["ghanaian", "street food"],
+    "ingredients": ["corn dough", "fermented corn meal", "salt", "dried fish", "tomatoes", "pepper", "onion"],
+    "instructions": ["Prepare fermented corn dough and partially cook.", "Wrap dough in corn husks and steam until firm.", "Blend tomato, onion, and pepper for sauce.", "Serve kenkey with fish and pepper sauce."],
+    "cooking_time": "80 minutes"
+  },
+  {
+    "name": "Akple with Aborbi Tadi",
+    "category": "swallow",
+    "tags": ["ewe", "ghanaian"],
+    "ingredients": ["corn flour", "water", "salt", "palm nut cream", "smoked fish", "onion", "pepper", "tomatoes"],
+    "instructions": ["Cook corn flour in water while stirring into akple.", "Boil palm nut cream and skim oil.", "Add onion, tomato, pepper, and fish.", "Simmer into rich soup and serve with akple."],
+    "cooking_time": "60 minutes"
+  },
+  {
+    "name": "Tuo Zaafi with Ayoyo Soup",
+    "category": "swallow",
+    "tags": ["northern", "ghanaian"],
+    "ingredients": ["maize flour", "water", "ayoyo leaves", "dawadawa", "onion", "tomatoes", "pepper", "salt"],
+    "instructions": ["Prepare stiff maize dough for tuo zaafi.", "Cook tomato, onion, and pepper base.", "Add ayoyo leaves and dawadawa.", "Simmer lightly and serve with tuo zaafi."],
+    "cooking_time": "45 minutes"
+  },
+  {
+    "name": "Omo Tuo with Groundnut Soup",
+    "category": "rice",
+    "tags": ["ghanaian", "comfort"],
+    "ingredients": ["rice", "water", "peanut butter", "chicken", "tomatoes", "onion", "pepper", "salt"],
+    "instructions": ["Cook rice very soft and mash into balls.", "Prepare groundnut soup with chicken and spices.", "Simmer until soup thickens slightly.", "Serve rice balls with hot soup."],
+    "cooking_time": "55 minutes"
+  },
+  {
+    "name": "Nkatenkwan with Rice Balls",
+    "category": "soup",
+    "tags": ["ghanaian", "peanut"],
+    "ingredients": ["rice", "peanut paste", "beef", "tomatoes", "onion", "garlic", "pepper", "salt"],
+    "instructions": ["Boil beef with onion and garlic.", "Blend tomato and pepper and add to pot.", "Mix peanut paste with stock and stir in.", "Serve with soft molded rice balls."],
+    "cooking_time": "60 minutes"
+  },
+  {
+    "name": "Beans and Fried Plantain",
+    "category": "beans",
+    "tags": ["ghanaian", "vegan"],
+    "ingredients": ["beans", "ripe plantain", "onion", "tomatoes", "palm oil", "pepper", "salt"],
+    "instructions": ["Cook beans until tender.", "Make a tomato onion pepper sauce in palm oil.", "Combine beans with sauce and simmer.", "Serve with fried ripe plantain."],
+    "cooking_time": "40 minutes"
+  },
+  {
+    "name": "Shito Fried Rice",
+    "category": "rice",
+    "tags": ["ghanaian", "quick"],
+    "ingredients": ["cooked rice", "shito", "eggs", "onion", "carrot", "green beans", "vegetable oil", "salt"],
+    "instructions": ["Heat oil and saute onion and vegetables.", "Add eggs and scramble.", "Stir in cooked rice and shito.", "Toss until hot and evenly coated."],
+    "cooking_time": "18 minutes"
+  },
+  {
+    "name": "Yam Chips and Shito",
+    "category": "snack",
+    "tags": ["ghanaian", "quick", "vegetarian"],
+    "ingredients": ["yam", "vegetable oil", "salt", "shito"],
+    "instructions": ["Cut yam into chip sticks.", "Soak briefly in salted water and drain.", "Deep fry until crisp and golden.", "Serve with shito."],
+    "cooking_time": "25 minutes"
+  },
+  {
+    "name": "Koose",
+    "category": "breakfast",
+    "tags": ["ghanaian", "street food", "vegan"],
+    "ingredients": ["black eyed beans", "onion", "ginger", "pepper", "salt", "vegetable oil"],
+    "instructions": ["Soak and peel black eyed beans.", "Blend beans with onion, ginger, and pepper.", "Whip mixture till fluffy and add salt.", "Fry spoonfuls until golden."],
+    "cooking_time": "30 minutes"
+  },
+  {
+    "name": "Hausa Koko",
+    "category": "breakfast",
+    "tags": ["ghanaian", "quick"],
+    "ingredients": ["millet", "ginger", "cloves", "pepper", "water", "sugar"],
+    "instructions": ["Soak millet and blend with spices.", "Ferment overnight for flavor.", "Cook slurry with water, stirring continuously.", "Serve hot with sugar."],
+    "cooking_time": "20 minutes"
+  },
+  {
+    "name": "Chinchinga",
+    "category": "grill",
+    "tags": ["ghanaian", "street food"],
+    "ingredients": ["beef", "kebab spice", "onion", "ginger", "garlic", "vegetable oil", "salt"],
+    "instructions": ["Marinate beef cubes with spice mix and aromatics.", "Thread onto skewers.", "Grill over medium heat until cooked.", "Serve with onion slices and pepper."],
+    "cooking_time": "25 minutes"
+  },
+  {
+    "name": "Tilapia with Banku",
+    "category": "seafood",
+    "tags": ["ghanaian", "grill"],
+    "ingredients": ["tilapia", "banku", "ginger", "garlic", "pepper", "onion", "salt", "lemon"],
+    "instructions": ["Season tilapia with ginger, garlic, salt, and lemon.", "Grill fish until charred and flaky.", "Prepare pepper onion relish.", "Serve with warm banku."],
+    "cooking_time": "35 minutes"
+  },
+  {
+    "name": "Fried Rice Ghana Style",
+    "category": "rice",
+    "tags": ["ghanaian", "party"],
+    "ingredients": ["rice", "mixed vegetables", "eggs", "chicken", "soy sauce", "onion", "vegetable oil", "salt"],
+    "instructions": ["Cook rice and cool.", "Stir fry onion, vegetables, and chicken.", "Add eggs and scramble.", "Add rice, soy sauce, and toss until hot."],
+    "cooking_time": "35 minutes"
+  },
+  {
+    "name": "Egg Stew with Rice",
+    "category": "stew",
+    "tags": ["ghanaian", "quick"],
+    "ingredients": ["eggs", "tomatoes", "onion", "pepper", "vegetable oil", "salt", "rice"],
+    "instructions": ["Cook rice separately.", "Saute onion and tomato with pepper.", "Crack eggs into sauce and cook gently.", "Serve egg stew over rice."],
+    "cooking_time": "25 minutes"
+  },
+  {
+    "name": "Turkey Tail Stew",
+    "category": "stew",
+    "tags": ["ghanaian", "spicy"],
+    "ingredients": ["turkey tails", "tomatoes", "onion", "pepper", "garlic", "ginger", "vegetable oil", "salt"],
+    "instructions": ["Season and boil turkey tails until tender.", "Fry turkey tails until lightly crisp.", "Cook tomato pepper sauce with aromatics.", "Combine turkey and simmer to absorb flavor."],
+    "cooking_time": "50 minutes"
+  },
+  {
+    "name": "Okro Soup with Crab",
+    "category": "soup",
+    "tags": ["ghanaian", "seafood"],
+    "ingredients": ["okra", "crab", "palm oil", "tomatoes", "onion", "pepper", "smoked fish", "salt"],
+    "instructions": ["Boil chopped okra until slightly thick.", "Saute tomato, onion, and pepper in palm oil.", "Add crab and smoked fish.", "Fold in okra and simmer briefly."],
+    "cooking_time": "30 minutes"
+  },
+  {
+    "name": "Nkontomire Yam Stew",
+    "category": "yam",
+    "tags": ["ghanaian", "leafy"],
+    "ingredients": ["yam", "cocoyam leaves", "onion", "tomatoes", "pepper", "palm oil", "eggs", "salt"],
+    "instructions": ["Boil yam chunks till soft.", "Cook onion, tomato, and pepper in oil.", "Add chopped cocoyam leaves and simmer.", "Add boiled yam and cracked eggs."],
+    "cooking_time": "40 minutes"
+  },
+  {
+    "name": "Plantain Frittata",
+    "category": "quick",
+    "tags": ["ghanaian", "breakfast"],
+    "ingredients": ["ripe plantain", "eggs", "onion", "tomatoes", "pepper", "vegetable oil", "salt"],
+    "instructions": ["Pan fry plantain slices till lightly golden.", "Mix eggs with chopped onion, tomato, and pepper.", "Pour egg mix over plantain in pan.", "Cook until set on both sides."],
+    "cooking_time": "20 minutes"
+  },
+  {
+    "name": "Gari Soakings",
+    "category": "quick",
+    "tags": ["ghanaian", "no-cook", "vegetarian"],
+    "ingredients": ["gari", "water", "milk", "sugar", "groundnuts"],
+    "instructions": ["Pour gari into a bowl.", "Add chilled water and milk.", "Stir in sugar.", "Top with roasted groundnuts."],
+    "cooking_time": "5 minutes"
+  },
+  {
+    "name": "Palm Nut Soup",
+    "category": "soup",
+    "tags": ["ghanaian", "traditional"],
+    "ingredients": ["palm nut cream", "goat meat", "onion", "tomatoes", "pepper", "dawadawa", "salt"],
+    "instructions": ["Boil goat meat with onion and salt.", "Add palm nut cream and simmer.", "Blend tomato and pepper into soup.", "Add dawadawa and cook until rich."],
+    "cooking_time": "65 minutes"
+  },
+  {
+    "name": "Rice Water (Rice Porridge)",
+    "category": "breakfast",
+    "tags": ["ghanaian", "simple"],
+    "ingredients": ["rice", "water", "milk", "sugar", "nutmeg", "salt"],
+    "instructions": ["Boil rice in excess water until very soft.", "Mash lightly for porridge texture.", "Add milk, sugar, salt, and nutmeg.", "Simmer briefly and serve warm."],
+    "cooking_time": "30 minutes"
+  },
+  {
+    "name": "Boiled Yam and Kontomire",
+    "category": "yam",
+    "tags": ["ghanaian", "vegetarian"],
+    "ingredients": ["yam", "cocoyam leaves", "tomatoes", "onion", "pepper", "palm oil", "salt"],
+    "instructions": ["Boil yam chunks till tender.", "Prepare kontomire sauce with tomato, onion, and pepper.", "Stir in cocoyam leaves and simmer.", "Serve sauce over boiled yam."],
+    "cooking_time": "35 minutes"
+  },
+  {
+    "name": "Chicken Light Soup",
+    "category": "soup",
+    "tags": ["ghanaian", "protein"],
+    "ingredients": ["chicken", "tomatoes", "onion", "pepper", "ginger", "garlic", "salt", "stock cube"],
+    "instructions": ["Season and boil chicken with onion and spices.", "Add blended tomato and pepper.", "Top with water and stock cube.", "Simmer until soup is flavorful and clear."],
+    "cooking_time": "50 minutes"
+  },
+  {
+    "name": "Vegetable Jollof",
+    "category": "vegetarian",
+    "tags": ["ghanaian", "vegan"],
+    "ingredients": ["rice", "tomatoes", "onion", "bell pepper", "carrot", "green beans", "garlic", "vegetable oil", "salt"],
+    "instructions": ["Blend tomato, onion, and pepper base.", "Cook blend in oil until reduced.", "Add vegetables and washed rice.", "Cook covered until rice is fluffy."],
+    "cooking_time": "40 minutes"
+  }
+]
