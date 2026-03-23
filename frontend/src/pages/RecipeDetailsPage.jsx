@@ -28,7 +28,6 @@ export default function RecipeDetailsPage({ recipes }) {
               {item}
               {matchedSet.has(item) && <strong> (matched)</strong>}
             </li>
-            <li key={item}>{item}</li>
           ))}
         </ul>
 

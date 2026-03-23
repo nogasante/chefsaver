@@ -37,16 +37,6 @@ export default function HomePage({ recipes, onRecipesChange }) {
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
   const suggestions = useMemo(() => INGREDIENT_SUGGESTIONS.join(', '), []);
-import { useState } from 'react';
-import RecipeCard from '../components/RecipeCard';
-import LoadingSpinner from '../components/LoadingSpinner';
-
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
-
-export default function HomePage({ recipes, onRecipesChange }) {
-  const [ingredients, setIngredients] = useState('');
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -55,9 +45,6 @@ export default function HomePage({ recipes, onRecipesChange }) {
     if (!trimmedIngredients) {
       setError('Please add at least one ingredient before searching.');
       setHasSubmitted(true);
-    // Basic validation: don't submit if the field is empty.
-    if (!trimmedIngredients) {
-      setError('Please add at least one ingredient before submitting.');
       return;
     }
 
@@ -67,15 +54,11 @@ export default function HomePage({ recipes, onRecipesChange }) {
 
     try {
       const response = await fetch('/api/recipes', {
-
-    try {
-      const response = await fetch(`${API_BASE_URL}/recipes`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ ingredients: trimmedIngredients, category })
-        body: JSON.stringify({ ingredients: trimmedIngredients })
       });
 
       const data = await response.json();
@@ -85,11 +68,6 @@ export default function HomePage({ recipes, onRecipesChange }) {
       }
 
       onRecipesChange(data.recipes || []);
-      if (!response.ok) {
-        throw new Error(data.error || 'Unable to generate recipes right now.');
-      }
-
-      onRecipesChange(data.recipes);
     } catch (requestError) {
       setError(requestError.message || 'Something went wrong. Please try again.');
       onRecipesChange([]);
@@ -140,11 +118,6 @@ export default function HomePage({ recipes, onRecipesChange }) {
         </form>
 
         <p className="helper-text">Try: {suggestions}</p>
-
-          <button type="submit" disabled={isLoading}>
-            {isLoading ? 'Generating...' : 'Get Recipes'}
-          </button>
-        </form>
 
         {error && <p className="error-message">{error}</p>}
       </section>
