@@ -2,17 +2,10 @@
   "name": "smartchef",
   "private": true,
   "version": "1.0.0",
+  "workspaces": ["frontend"],
   "scripts": {
     "install:all": "npm --prefix frontend install",
-    "build": "npm --prefix frontend run build && rm -rf dist && cp -R frontend/dist dist",
-  "workspaces": [
-    "frontend"
-  ],
-  "scripts": {
-    "install:all": "npm install --workspace frontend",
-    "build": "npm --prefix frontend run build && rm -rf dist && cp -R frontend/dist dist",
     "build": "npm --prefix frontend run build",
-    "dev:frontend": "npm --prefix frontend run dev",
-    "dev": "vercel dev"
+    "dev": "npm --prefix frontend run dev"
   }
 }
