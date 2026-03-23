@@ -2,6 +2,9 @@
   "name": "smartchef",
   "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm --prefix frontend install",
+    "build": "npm --prefix frontend run build && rm -rf dist && cp -R frontend/dist dist",
   "workspaces": [
     "frontend"
   ],

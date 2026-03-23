@@ -135,6 +135,8 @@ Recommended settings:
 - Output Directory: `dist`
 - Install Command: `npm install`
 
+If your Vercel project still has a custom install command set to `npm run install:all`, that now works too.
+
 `vercel.json` is configured to:
 - Build frontend
 - Expose API functions under `/api/*`
