@@ -122,6 +122,23 @@ npm run dev:frontend
 
 > For full local serverless emulation, use `npm run dev` (runs `vercel dev`) if Vercel CLI is installed.
 
+## Deploy to Vercel (Fix for install/build errors)
+If you import from GitHub and choose **Root Directory = `frontend`**, deployment now works because:
+- `frontend/package.json` includes `install:all`
+- `vercel.json` uses plain `npm install`
+- output directory is `dist`
+
+Recommended settings:
+- Framework Preset: **Vite**
+- Root Directory: **frontend** (or repo root)
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
+
+`vercel.json` is configured to:
+- Build frontend
+- Expose API functions under `/api/*`
+- Support SPA routing fallback to `index.html`
 ## Deploy to Vercel
 1. Push this repo to GitHub.
 2. Import the repo in Vercel.
@@ -140,6 +157,8 @@ npm run install:all
 # run frontend locally
 npm run dev:frontend
 
+# build frontend (+ sync to root /dist)
+npm run build
 # build frontend
 npm run build
 └── README.md
