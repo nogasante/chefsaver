@@ -1,26 +1,26 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const App = () => {
-  const [cachedData, setCachedData] = React.useState(localStorage.getItem('data') || '');
+const RECIPE_CACHE_KEY = 'smartchef_recipes';
 
-  React.useEffect(() => {
-    // Fetch data and store in localStorage
-    fetchData();
-  }, []);
+class App extends React.Component {
+  componentDidMount() {
+    const cachedRecipes = localStorage.getItem(RECIPE_CACHE_KEY);
+    if (cachedRecipes) {
+      // Restore from cache
+    }
+  }
 
-  const fetchData = async () => {
-    const response = await fetch('api/data');
-    const data = await response.json();
-    localStorage.setItem('data', data);
-    setCachedData(data);
-  };
-
-  return (
-    <Routes>
-      {/* Define your routes here */}
-    </Routes>
-  );
-};
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/recipe/:id" component={RecipeDetailsPage} />
+        </Switch>
+      </Router>
+    );
+  }
+}
 
 export default App;
