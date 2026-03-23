@@ -81,5 +81,5 @@ app.get('/health', (_, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`SmartChef backend is running on http://localhost:${PORT}`);
+  console.log(`ChefSaver backend is running on http://localhost:${PORT}`);
 });

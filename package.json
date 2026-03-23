@@ -1,5 +1,5 @@
 {
-  "name": "smartchef",
+  "name": "chefsaver",
   "private": true,
   "version": "1.0.0",
   "workspaces": ["frontend"],

@@ -79,9 +79,9 @@ export default function HomePage({ recipes, onRecipesChange }) {
   return (
     <main className="page-container">
       <section className="hero-card">
-        <h1>SmartChef</h1>
-        <p>Find Ghanaian meals from ingredients already in your kitchen.</p>
-        <p>Tell SmartChef what you have, and get meal ideas instantly.</p>
+        <h1>ChefSaver</h1>
+        <p>Discover meals you can prepare using ingredients you already have at home.</p>
+        <p>Tell ChefSaver what you have, and get meal ideas instantly.</p>
 
         <form onSubmit={handleSubmit} className="ingredient-form">
           <label htmlFor="ingredients">Ingredients</label>

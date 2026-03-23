@@ -1,6 +1,6 @@
-# SmartChef (Production-Ready, Free & Vercel-Native)
+# ChefSaver (Production-Ready, Free & Vercel-Native)
 
-SmartChef is a full-stack Ghanaian recipe suggestion app that runs fully on Vercel with **no paid AI APIs**.
+ChefSaver is a full-stack recipe suggestion app that helps users discover meals they can prepare using the ingredients they already have at home. It runs fully on Vercel with **no paid AI APIs**.
 
 ## What changed
 - Removed all OpenAI/AI integration.
@@ -21,9 +21,9 @@ SmartChef is a full-stack Ghanaian recipe suggestion app that runs fully on Verc
 - Best match badge + matched ingredient highlighting (bonus)
 - Loading, error, and empty states
 - Mobile-first UI
-# SmartChef (Full-Stack Recipe Generator)
+# ChefSaver (Full-Stack Recipe Generator)
 
-SmartChef is a full-stack web app where users enter available ingredients and get 3 AI-generated meal suggestions.
+ChefSaver is a full-stack web app where users enter available ingredients and get meal suggestions.
 
 ## Tech Stack
 - **Frontend:** React + Vite + React Router
@@ -41,7 +41,7 @@ SmartChef is a full-stack web app where users enter available ingredients and ge
 
 ## Project Structure
 ```text
-smartchef/
+chefsaver/
 ├── api/
 │   ├── _lib/
 │   │   └── recipeStore.js

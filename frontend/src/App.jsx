@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import RecipeDetailsPage from './pages/RecipeDetailsPage';
 
-const RECIPE_CACHE_KEY = 'smartchef_recipes';
+const RECIPE_CACHE_KEY = 'chefsaver_recipes';
 
 export default function App() {
   const [recipes, setRecipes] = useState(() => {
