@@ -8,6 +8,8 @@ export default function RecipeDetailsPage({ recipes }) {
     return <Navigate to="/" replace />;
   }
 
+  const matchedSet = new Set(selectedRecipe.matchedIngredients || []);
+
   return (
     <main className="page-container">
       <section className="details-card">
@@ -22,6 +24,10 @@ export default function RecipeDetailsPage({ recipes }) {
         <h2>Ingredients</h2>
         <ul>
           {selectedRecipe.ingredients.map((item) => (
+            <li key={item} className={matchedSet.has(item) ? 'matched-ingredient' : ''}>
+              {item}
+              {matchedSet.has(item) && <strong> (matched)</strong>}
+            </li>
             <li key={item}>{item}</li>
           ))}
         </ul>

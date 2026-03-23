@@ -45,12 +45,15 @@ label {
   font-weight: 600;
 }
 
+input,
+select {
 input {
   width: 100%;
   border: 1px solid #cbd5e1;
   border-radius: 0.75rem;
   padding: 0.8rem 0.9rem;
   font-size: 1rem;
+  background: #fff;
 }
 
 button {
@@ -69,9 +72,23 @@ button:disabled {
   opacity: 0.7;
 }
 
+.helper-text {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
 .error-message {
   color: #b91c1c;
   margin-top: 0.9rem;
+}
+
+.empty-state {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #e2e8f0;
+  color: #1e293b;
 }
 
 .results-grid {
@@ -89,6 +106,23 @@ button:disabled {
   padding: 1rem;
   box-shadow: 0 6px 24px rgb(15 23 42 / 0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  background: #dbeafe;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
 }
 
 .recipe-card:hover {
@@ -123,6 +157,10 @@ button:disabled {
   text-decoration: none;
   color: #1d4ed8;
   font-weight: 600;
+}
+
+.matched-ingredient {
+  color: #065f46;
 }
 
 @keyframes spin {

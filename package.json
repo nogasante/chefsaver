@@ -1,0 +1,14 @@
+{
+  "name": "smartchef",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspace frontend",
+    "build": "npm --prefix frontend run build",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "vercel dev"
+  }
+}
