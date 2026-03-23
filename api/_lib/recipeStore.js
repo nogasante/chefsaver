@@ -37,26 +37,11 @@ function tokenizeIngredient(value) {
     .filter(Boolean);
 }
 
-function ingredientMatches(userIngredient, recipeIngredient) {
-  const userTokens = tokenizeIngredient(userIngredient);
-  const recipeTokens = tokenizeIngredient(recipeIngredient);
-
-  if (!userTokens.length || !recipeTokens.length) {
-    return false;
-  }
-
-  return userTokens.some((userToken) =>
-    recipeTokens.some(
-      (recipeToken) =>
-        recipeToken.includes(userToken) || userToken.includes(recipeToken)
-    )
-  );
-}
-
 function prepareRecipe(recipe) {
   return {
     ...recipe,
-    normalizedIngredients: recipe.ingredients.map((item) => normalizeWord(item))
+    tokenizedIngredients: recipe.ingredients.map(tokenizeIngredient),
+    normalizedCategory: normalizeWord(recipe.category)
   };
 }
 
@@ -79,18 +64,28 @@ function parseUserIngredients(rawIngredients) {
     .filter(Boolean);
 }
 
-function scoreRecipe(recipe, userIngredients) {
+function scoreRecipe(recipe, userTokensList) {
   let matchedCount = 0;
   const matchedIngredients = [];
 
-  for (const recipeIngredient of recipe.ingredients) {
-    const isMatched = userIngredients.some((userIngredient) =>
-      ingredientMatches(userIngredient, recipeIngredient)
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    const recipeTokens = recipe.tokenizedIngredients[i];
+    if (!recipeTokens.length) {
+      continue;
+    }
+
+    const isMatched = userTokensList.some((userTokens) =>
+      userTokens.some((userToken) =>
+        recipeTokens.some(
+          (recipeToken) =>
+            recipeToken.includes(userToken) || userToken.includes(recipeToken)
+        )
+      )
     );
 
     if (isMatched) {
       matchedCount += 1;
-      matchedIngredients.push(recipeIngredient);
+      matchedIngredients.push(recipe.ingredients[i]);
     }
   }
 
@@ -112,16 +107,17 @@ function findMatchingRecipes({ ingredients, category = 'all', limit = 8, minScor
     return [];
   }
 
+  const userTokensList = userIngredients.map(tokenizeIngredient);
   const categoryFilter = normalizeWord(category);
   const recipes = getRecipes();
 
   const filteredByCategory =
     categoryFilter && categoryFilter !== 'all'
-      ? recipes.filter((recipe) => normalizeWord(recipe.category) === categoryFilter)
+      ? recipes.filter((recipe) => recipe.normalizedCategory === categoryFilter)
       : recipes;
 
   const ranked = filteredByCategory
-    .map((recipe) => scoreRecipe(recipe, userIngredients))
+    .map((recipe) => scoreRecipe(recipe, userTokensList))
     .filter((recipe) => recipe.score >= minScore)
     .sort((a, b) => {
       if (b.score !== a.score) {
@@ -130,7 +126,7 @@ function findMatchingRecipes({ ingredients, category = 'all', limit = 8, minScor
       return b.matchedCount - a.matchedCount;
     })
     .slice(0, limit)
-    .map(({ normalizedIngredients, ...recipe }) => recipe);
+    .map(({ tokenizedIngredients, normalizedCategory, ...recipe }) => recipe);
 
   if (ranked[0]) {
     ranked[0].isBestMatch = true;

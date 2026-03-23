@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import RecipeCard from '../components/RecipeCard';
 import LoadingSpinner from '../components/LoadingSpinner';
 
@@ -29,14 +29,14 @@ const INGREDIENT_SUGGESTIONS = [
   'tilapia'
 ];
 
+const SUGGESTIONS_DISPLAY = INGREDIENT_SUGGESTIONS.join(', ');
+
 export default function HomePage({ recipes, onRecipesChange }) {
   const [ingredients, setIngredients] = useState('');
   const [category, setCategory] = useState('all');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
-
-  const suggestions = useMemo(() => INGREDIENT_SUGGESTIONS.join(', '), []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -117,7 +117,7 @@ export default function HomePage({ recipes, onRecipesChange }) {
           </button>
         </form>
 
-        <p className="helper-text">Try: {suggestions}</p>
+        <p className="helper-text">Try: {SUGGESTIONS_DISPLAY}</p>
 
         {error && <p className="error-message">{error}</p>}
       </section>
