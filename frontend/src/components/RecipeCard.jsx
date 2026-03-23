@@ -16,6 +16,10 @@ export default function RecipeCard({ recipe, index }) {
       <p>
         <span>Match Score:</span> {Math.round((recipe.score || 0) * 100)}%
       </p>
+      <h3>{recipe.name}</h3>
+      <p>
+        <span>Cooking Time:</span> {recipe.cooking_time}
+      </p>
     </Link>
   );
 }

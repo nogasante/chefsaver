@@ -23,6 +23,13 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem(RECIPE_CACHE_KEY, JSON.stringify(recipes));
   }, [recipes]);
+import { useState } from 'react';
+import HomePage from './pages/HomePage';
+import RecipeDetailsPage from './pages/RecipeDetailsPage';
+
+export default function App() {
+  // Store recipes in top-level state so details page can read selected recipes.
+  const [recipes, setRecipes] = useState([]);
 
   return (
     <Routes>
