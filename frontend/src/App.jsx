@@ -1,47 +1,26 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import HomePage from './pages/HomePage';
-import RecipeDetailsPage from './pages/RecipeDetailsPage';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-const RECIPE_CACHE_KEY = 'smartchef_recipes';
+const App = () => {
+  const [cachedData, setCachedData] = React.useState(localStorage.getItem('data') || '');
 
-export default function App() {
-  const [recipes, setRecipes] = useState(() => {
-    const cached = localStorage.getItem(RECIPE_CACHE_KEY);
+  React.useEffect(() => {
+    // Fetch data and store in localStorage
+    fetchData();
+  }, []);
 
-    if (!cached) {
-      return [];
-    }
-
-    try {
-      return JSON.parse(cached);
-    } catch {
-      return [];
-    }
-  });
-
-  useEffect(() => {
-    localStorage.setItem(RECIPE_CACHE_KEY, JSON.stringify(recipes));
-  }, [recipes]);
-import { useState } from 'react';
-import HomePage from './pages/HomePage';
-import RecipeDetailsPage from './pages/RecipeDetailsPage';
-
-export default function App() {
-  // Store recipes in top-level state so details page can read selected recipes.
-  const [recipes, setRecipes] = useState([]);
+  const fetchData = async () => {
+    const response = await fetch('api/data');
+    const data = await response.json();
+    localStorage.setItem('data', data);
+    setCachedData(data);
+  };
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={<HomePage recipes={recipes} onRecipesChange={setRecipes} />}
-      />
-      <Route
-        path="/recipes/:recipeIndex"
-        element={<RecipeDetailsPage recipes={recipes} />}
-      />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      {/* Define your routes here */}
     </Routes>
   );
-}
+};
+
+export default App;
